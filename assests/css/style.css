@@ -1,0 +1,51 @@
+#animation-input {
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.jumbotron {
+	padding-bottom: 10px;
+	box-shadow: 2px 2px 2px #888888;
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+}
+
+.gif-btn {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.newWord {
+	width: 80px;
+	box-shadow: 2px 2px 10px #888888;
+	margin-right: 2px;
+}
+
+
+.remove {
+	width: 23px;
+	height: 23px;
+}
+
+.edit {
+	margin-right: 30px;
+	width: 23px;
+	height: 23px;
+}
+
+.save {
+	margin-right: 30px;
+}
+
+.animation {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.img-animation {
+	/*margin-left: 20px;*/
+	margin-right: 20px;
+}
