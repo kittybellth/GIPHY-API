@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	// creating array for button
 	var gifArr = ["dog", "cat", "bird"];
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
 			// appending all those element to the div
 			$(".button").append(gifBtn, newInput, remBtn, editBtn,  saveBtn);
-			
+
 		};
 			edit();
 			save();
@@ -64,7 +64,7 @@ $(document).ready(function(){
 			// preventing browser reload the page when user click submit button
 			event.preventDefault();
 
-			// clearing the div before adding new button to prevent 
+			// clearing the div before adding new button to prevent
 			// generating repeating button
 			$(".button").empty();
 
@@ -93,7 +93,7 @@ $(document).ready(function(){
 
 		function edit(){
 			$(".edit").on("click", function(){
-				
+
 				event.preventDefault();
 
 				n = $(this).attr('number');
@@ -110,7 +110,7 @@ $(document).ready(function(){
 
 		function save() {
 			$(".save").on("click", function(){
-		
+
 				event.preventDefault();
 
 				i = $(this).attr('number');
@@ -143,7 +143,7 @@ $(document).ready(function(){
 
 				$(".button").empty();
 				init();
-	
+
 			});
 		};
 
@@ -164,7 +164,7 @@ $(document).ready(function(){
 			        .done(function(response) {
 			          console.log(queryURL);
 			          console.log(response);
-			         
+
 			         var results = response.data;
 
 				         for (var i = 0; i < results.length; i++) {
@@ -178,12 +178,12 @@ $(document).ready(function(){
 				         					 "data-still": results[i].images.fixed_height_still.url,
 				         					 "data-state": "still"
 				         					});
-				         	resultsImg.addClass("img-animation");
+				         	resultsImg.addClass("img-animation hvr-grow");
 
 				         	$(".display").append(resultsDiv);
 				         	resultsDiv.append(resultsP, resultsImg);
 
-				  
+
 				         }
 
 				            $(".img-animation").on("click", function(){
@@ -197,18 +197,18 @@ $(document).ready(function(){
 					        		$(this).attr("src", $(this).attr("data-still"));
 					        		$(this).attr("data-state", "still");
 					        	}
-					         	
+
 				         });
 
 				            // more option with user experience with mouseover and out
 
 				         //    $(".img-animation").on("mouseover", function(){
-					       
+
 					        //  	$(this).attr("src", $(this).attr("data-animation"));
 				         // });
 
 				         //    $(".img-animation").on("mouseout", function(){
-					       
+
 					        //  	$(this).attr("src", $(this).attr("data-still"));
 				         // });
 			         });
