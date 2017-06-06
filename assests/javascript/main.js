@@ -153,7 +153,7 @@ $(document).ready(function(){
 				$(".display").empty();
 
 				var animation = $(this).attr("value");
-				var queryURL  = "http://api.giphy.com/v1/gifs/search?q=" +
+				var queryURL  = "https://api.giphy.com/v1/gifs/search?q=" +
         						animation + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         		 $.ajax({
